@@ -370,7 +370,7 @@ h4 {
   width: 100%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: 100%;
+  grid-template-columns: minmax(100px, 1fr);
   column-gap: 3rem;
   row-gap: 5rem;
   align-content: center;
@@ -378,26 +378,20 @@ h4 {
   justify-items: center;
 }
 
-@media only screen and (min-width: 1520px) {
-  .project__grid {
-    grid-template-columns: 35% 35%;
-  }
-}
-
 .project {
   background-color: #f0f0f0;
-  width: 600px;
+  width: 550px;
   height: 400px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: grid; */
   position: relative;
   cursor: pointer;
+  border-radius: 8px;
 }
 
-@media only screen and (min-width: 981px) {
+@media only screen and (min-width: 600px) {
   .grid_items {
     grid-template-columns: 47.5% 47.5%;
     grid-column-gap: 5%;
@@ -405,6 +399,12 @@ h4 {
   }
   .grid_items > div {
     padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1520px) {
+  .project__grid {
+    grid-template-columns: 35% 35%;
   }
 }
 
@@ -448,7 +448,7 @@ h4 {
   justify-content: center;
 }
 .img--1 {
-  width: 40%;
+  width: 45%;
   padding-left: 2rem;
   border: none;
   box-shadow: none;
