@@ -2,4 +2,11 @@
 
 This is the portfolio website of Jacinta Phillips, a Computer Science student from Brisbane, Australia.
 
-This site is live at: https://jacintaph.github.io/
+The portfolio showcases recent projects, work experience and skills.
+
+Site is live at: https://jacintaph.github.io/
+
+## Technologies used
+- HTML
+- CSS
+- Vanilla JavaScript
