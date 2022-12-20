@@ -303,10 +303,8 @@ h4 {
 
 @media only screen and (max-width: 550px) {
   .section--1 {
-    margin-left: 0;
-    padding-left: 0;
+    margin-right: 55px;
   }
-
   .about__tab {
     display: block;
   }
@@ -376,12 +374,6 @@ h4 {
   color: #777575;
 }
 
-@media only screen and (max-width: 550px) {
-  .section__title--2 {
-    padding: 0;
-  }
-}
-
 .project__grid {
   width: 100%;
   display: grid;
@@ -396,8 +388,8 @@ h4 {
 
 .project {
   background-color: #f0f0f0;
-  width: 550px;
-  height: 400px;
+  width: 500px;
+  height: 375px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -498,6 +490,16 @@ h4 {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 550px) {
+  .section__title--2 {
+    padding-left: 40px;
+  }
+  .project {
+    width: 60%;
+    height: 300px;
+  }
+}
+
 /* ------------- FOOTER ------------ */
 
 .footer {
@@ -559,6 +561,17 @@ h4 {
   bottom: 0;
   clear: both;
 }
+
+@media only screen and (max-width: 550px) {
+  .footer__text_cont--left {
+    padding-left: 20px;
+  }
+  .footer__text_cont--right {
+    padding-right: 20px;
+  }
+}
+
+/* PROJECT POPUP WINDOWS */
 
 .overlay {
   position: fixed;
@@ -786,4 +799,16 @@ h4 {
   /* background-color: #fff; */
   background-color: #888;
   opacity: 1;
+}
+
+@media only screen and (max-width: 550px) {
+  .popup {
+    width: 90%;
+  }
+  .img__slider {
+    width: 100%;
+  }
+  .slider__btn {
+    opacity: 0;
+  }
 }
