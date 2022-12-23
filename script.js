@@ -29,6 +29,16 @@ const dotContainer = document.querySelector(".dots");
 /* --------- RESET SCROLL ON REFRESH ------- */
 history.scrollRestoration = "manual";
 
+/* --------- Nav Bar Responsive ------------ */
+function myFunction() {
+  const navLinks = document.querySelector(".nav__links");
+  if (navLinks.className === "nav__links") {
+    navLinks.className += " responsive";
+  } else {
+    navLinks.className = "nav__links";
+  }
+}
+
 /* --------- SCROLL EVENT LISTENER ----------- */
 section3.addEventListener("scroll", function () {
   const s3coords = section3.getBoundingClientRect;
