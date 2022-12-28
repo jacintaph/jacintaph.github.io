@@ -25,14 +25,18 @@
           designer="Jacinta Phillips"
           data-version-number="3"
         />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
         <div class="nav__links">
           <a class="nav__link nav__link--active" href="#home">Home</a>
           <a class="nav__link" href="#about">About</a>
           <a class="nav__link" href="#projects">Projects</a>
           <a class="nav__link" href="#contact">Contact</a>
-          <a href="javascript:void(0);" class="navicon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-          </a>
         </div>
       </nav>
 
@@ -40,167 +44,191 @@
         <div class="header__text">
           <h1>Hi, I'm Jacinta Phillips.</h1>
           <h4>
-            Aspiring <span class="title__word">Software Developer. </span><br>Learning in Australia.</h4>
-            <a 
-          class="down__arrow"  
-          target='_blank'>
+            Aspiring <span class="title__word">Software Developer. </span
+            ><br />Learning in Australia.
+          </h4>
+          <a class="down__arrow" target="_blank">
             <ion-icon class="up--down" name="chevron-down-outline"></ion-icon>
           </a>
         </div>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
-      
     </header>
 
     <div class="sidenav">
       <ul class="side__nav">
         <li class="social__icons">
           <a
-          class="icon icon-linkedin"
-          href="https://linkedin.com/in/jacintaphillips"
-          target="_blank"
+            class="icon icon-linkedin"
+            href="https://linkedin.com/in/jacintaphillips"
+            target="_blank"
           >
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
         </li>
         <li class="social__icons">
           <a
-          class="icon icon-github"
-          href="https://github.com/jacintaph"
-          target="_blank"
+            class="icon icon-github"
+            href="https://github.com/jacintaph"
+            target="_blank"
           >
-          <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
           </a>
         </li>
       </ul>
     </div>
 
     <div class="return__home">
-      <a 
-        class="up__arrow"
-        target="_blank">
-          <ion-icon name="arrow-up-circle-outline"></ion-icon>
-        </a>
+      <a class="up__arrow" target="_blank">
+        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+      </a>
     </div>
 
     <!------------- ABOUT -------------->
     <section class="section" id="about">
       <div class="section--1">
         <div>
-          <img src="img/programmer2.png" class="about__img">
+          <img src="img/programmer.png" class="about__img" />
         </div>
         <div class="about">
           <h2 class="section__title section__title--1">About Me</h2>
-          <div class="about__intro"
-              <p>I'm a Computer Science student based in Brisbane, Australia. I began my coding journey early last year and quickly took an interest in web applications, blockchain and Full Stack development. I enjoy exploring different programming languages and combining my health industry experience with technology. Welcome to my website. </p>
+          <div class="about__intro">
+            <p>
+              I'm a Computer Science student based in Brisbane, Australia. I
+              began my coding journey early last year and quickly took an
+              interest in web applications and Full Stack development. I enjoy
+              exploring different programming languages and combining my health
+              industry experience with technology. Welcome to my website.
+            </p>
           </div>
-  
+
           <div class="about__tabs-container">
-              <button class="btn about__tab about__tab--1 about__tab--active " data-tab="1">
-                🖥️  Skills</button>
-              <button class="btn about__tab about__tab--2" data-tab="2">
-                👩‍💻  Currently Learning</button>
-              <button class="btn about__tab about__tab--3" data-tab="3">
-                🏫  Education</button>
-              <button class="btn about__tab about__tab--4" data-tab="4">
-                💡  Aside from Coding...</button>
+            <button
+              class="btn about__tab about__tab--1 about__tab--active"
+              data-tab="1"
+            >
+              🖥️ Skills
+            </button>
+            <button class="btn about__tab about__tab--2" data-tab="2">
+              👩‍💻 Currently Learning
+            </button>
+            <button class="btn about__tab about__tab--3" data-tab="3">
+              🏫 Education
+            </button>
+            <button class="btn about__tab about__tab--4" data-tab="4">
+              💡 Aside from Coding...
+            </button>
           </div>
-  
+
           <div class="about__content about__content--1 about__content--active">
             <ul class="tab__skills">
-              <li class="tab__contents"><span>C/C++</span><br>Command line interface projects</li>
-              <li class="tab__contents"><span>JavaScript</span><br>Web applications</li>
-              <li class="tab__contents"><span>Python</span><br>Machine learning and Algorithm projects</li>
-              <li class="tab__contents"><span>R Studio</span><br>Statistical analysis and data presentation</li>
+              <li class="tab__contents">
+                <span>C/C++</span><br />Command line interface projects
+              </li>
+              <li class="tab__contents">
+                <span>JavaScript</span><br />Web applications
+              </li>
+              <li class="tab__contents">
+                <span>Python</span><br />Machine learning and Algorithm projects
+              </li>
+              <li class="tab__contents">
+                <span>R Studio</span><br />Statistical analysis and data
+                presentation
+              </li>
             </ul>
           </div>
-  
-          <div class="about__content about__content--2 ">
+
+          <div class="about__content about__content--2">
             <ul class="tab__current">
               <li class="tab__contents">React + Next.js web applications</li>
+              <li class="tab__contents">Node.js + Express + MongoDb</li>
               <li class="tab__contents">C# fundamentals</li>
-              <li class="tab__contents">Solidity</li>
             </ul>
           </div>
-  
+
           <div class="about__content about__content--3">
             <ul class="tab__education">
-              <li class="tab__contents"><span>2021 - current</span><br>Bachelor of Computer Science majoring in Software Development at Griffith University. <br>Expected Graduation 2023.</li>
-              <li class="tab__contents"><span>2016 - 2019</span><br>Bachelor of Physiotherapy (Hons)</li>
+              <li class="tab__contents">
+                <span>2021 - current</span><br />Bachelor of Computer Science
+                majoring in Software Development at Griffith University.
+                <br />Expected Graduation 2023.
+              </li>
+              <li class="tab__contents">
+                <span>2016 - 2019</span><br />Bachelor of Physiotherapy (Hons)
+              </li>
             </ul>
           </div>
-  
+
           <div class="about__content about__content--4">
             <ul class="tab__extra">
-              <li class="tab__contents"><span>Qualified Physiotherapist</span><br>Previously worked in the sports, musculoskeletal, and neurological sectors. <br>Avid interest in improving physical and mental wellbeing.</li>
-              <li class="tab__contents"><br></li>
+              <li class="tab__contents">
+                <span>Qualified Physiotherapist</span><br />Previously worked in
+                the sports, musculoskeletal, and neurological sectors.
+                <br />Avid interest in improving physical and mental wellbeing.
+              </li>
+              <li class="tab__contents"><br /></li>
             </ul>
           </div>
-  
         </div>
       </div>
-      
-      
     </section>
-
 
     <!----------- PROJECTS ------------->
     <section class="section" id="projects">
       <div class="section--2">
-
-        <div class="section__title">
-          <h2 class="section__title--2">Projects</h2>
-          <ion-icon class="code"name="code-slash-outline"></ion-icon>
-        </div>
-        
         <div class="project__grid">
-          <div class="project project--1" data-tab="1">
-              <img src="img/logo-2.png" class="img img--1">
-              <div class="text hidden">
-                <p class="text__title" data-tab="1">Maptiv</p>
-                <p class="text__content">Web Application</p>
-              </div>
+          <div class="project section__title">
+            <h2 class="section__title--2">Projects</h2>
+            <ion-icon class="code" name="code-slash-outline"></ion-icon>
           </div>
-          
-          <div class="project project--2" data-tab="2">
-            <img src="img/shellTitle.png" class="img img--2">
+          <div class="project project__tile project--1" data-tab="1">
+            <img src="img/logo-2.png" class="img img--1" />
             <div class="text hidden">
-             <p class="text__title" data-tab="2">Command Shell</p>
-            <p class="text__content">
-               Command line interface application using C
-             </p>
-             </div>
+              <p class="text__title" data-tab="1">Maptiv</p>
+              <p class="text__content">Web Application</p>
+            </div>
           </div>
 
-          <div class="project project--3" data-tab="3">
-              <img src="img/forkify.png" class="img img--3">
-              <div class="text hidden">
-                <p class="text__title" data-tab="3">TEXT -- 1</p>
-                <p class="text__content">Web Application</p>
-              </div>
+          <div class="project project__tile project--2" data-tab="2">
+            <img src="img/shellTitle.png" class="img img--2" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="2">Command Shell</p>
+              <p class="text__content">
+                Command line interface application using C
+              </p>
+            </div>
           </div>
 
-          <div class="project project--4" data-tab="4">
-              <img src="img/comingSoon.png" class="img img--4">
-              <div class="text hidden">
-                <p class="text__title" data-tab="4"></p>
-                <p class="text__content"></p>
-              </div>
+          <div class="project project__tile project--3" data-tab="3">
+            <img src="img/forkify.png" class="img img--3" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="3">TEXT -- 1</p>
+              <p class="text__content">Web Application</p>
+            </div>
           </div>
-        
+
+          <div class="project project__tile project--4" data-tab="4">
+            <img src="img/comingSoon.png" class="img img--4" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="4"></p>
+              <p class="text__content"></p>
+            </div>
+          </div>
         </div>
 
         <div class="overlay hidden"></div>
         <div class="wrapper">
-          
           <div class="popup popup--1 hidden" data-tab="1">
             <button class="btn btn--close-modal">&times;</button>
             <div class="popup__content">
-              <span class="p--title">Maptiv  -- COMING SOON!</span><br>
+              <span class="p--title">Maptiv -- COMING SOON!</span><br />
               <span class="p--title-2">Project</span>
-              <p class="p--text">A fitness themed web application that allows users to map and upload various fitness activities to a personal account. Each activity is uniquely stored and displayed on a map using a geolocation API. </p>
+              <p class="p--text">
+                A fitness themed web application that allows users to map and
+                upload various fitness activities to a personal account. Each
+                activity is uniquely stored and displayed on a map using a
+                geolocation API.
+              </p>
               <span class="p--title-2">Programming Languages + Tools</span>
               <ul class="p--list">
                 <li><span>JavaScript</span></li>
@@ -209,18 +237,25 @@
               </ul>
               <span class="p--title-2">Learning Points</span>
               <ul class="p--list">
-                <li><span>Accessing and understanding open-source Geolocation API docs</span></li>
+                <li>
+                  <span
+                    >Accessing and understanding open-source Geolocation API
+                    docs</span
+                  >
+                </li>
                 <li><span>Displaying map markers</span></li>
                 <li><span>Manipulating data structures: Objects</span></li>
-                <li><span>Rendering activity information for user accounts</span></li>
+                <li>
+                  <span>Rendering activity information for user accounts</span>
+                </li>
               </ul>
-                <!-- <a
+              <!-- <a
                   class="btn btn--source"
                   href="https://github.com/jacintaph"
                   target="_blank">
                   source code
                 </a> -->
-             
+
               <!-- <div class="img__slider">
                 <div class="slide fade">
                   <img src="img/shell-1.png"  class="imgs slide--1" />  
@@ -247,16 +282,18 @@
                 <div class="dots"></div>
 
               </div> -->
-
             </div>
-          
           </div>
           <div class="popup popup--2 hidden" data-tab="2">
             <button class="btn btn--close-modal">&times;</button>
             <div class="popup__content">
-              <span class="p--title">Command Shell</span><br>
+              <span class="p--title">Command Shell</span><br />
               <span class="p--title-2">Project</span>
-              <p class="p--text">Built a linux command shell that operates using Cygwin. The shell accepts a total of 7 commands, and executes in an endless loop until the user enters a 'quit' command.</p>
+              <p class="p--text">
+                Built a linux command shell that operates using Cygwin. The
+                shell accepts a total of 7 commands, and executes in an endless
+                loop until the user enters a 'quit' command.
+              </p>
               <span class="p--title-2">Programming Languages + Tools</span>
               <ul class="p--list">
                 <li><span>C</span></li>
@@ -264,32 +301,38 @@
               </ul>
               <span class="p--title-2">Learning Points</span>
               <ul class="p--list">
-                <li><span>Using Cygwin and Linux commands to display operating system information</span></li>
+                <li>
+                  <span
+                    >Using Cygwin and Linux commands to display operating system
+                    information</span
+                  >
+                </li>
                 <li><span>Creating prefix calculation algorithms </span></li>
                 <li><span>File and folder handling</span></li>
               </ul>
-                <a
-                  class="btn btn--source-1"
-                  href="https://github.com/jacintaph/shell"
-                  target="_blank">
-                  source code
-                </a>
-             
+              <a
+                class="btn btn--source-1"
+                href="https://github.com/jacintaph/shell"
+                target="_blank"
+              >
+                source code
+              </a>
+
               <div class="img__slider">
                 <div class="slide fade">
-                  <img src="img/shell-1.png"  class="imgs slide--1" />  
+                  <img src="img/shell-1.png" class="imgs slide--1" />
                 </div>
                 <div class="slide">
-                  <img src="img/shell2.png" class="imgs slide--2" />  
+                  <img src="img/shell2.png" class="imgs slide--2" />
                 </div>
                 <div class="slide">
-                  <img src="img/shell3.png"  class="imgs slide--3" />  
+                  <img src="img/shell3.png" class="imgs slide--3" />
                 </div>
                 <div class="slide">
-                  <img src="img/shell4.png" class="imgs slide--4" />  
+                  <img src="img/shell4.png" class="imgs slide--4" />
                 </div>
                 <div class="slide">
-                  <img src="img/shell5.png" class="imgs slide--5" />  
+                  <img src="img/shell5.png" class="imgs slide--5" />
                 </div>
 
                 <button class="slider__btn slider__btn--left">
@@ -299,16 +342,19 @@
                   <ion-icon name="chevron-forward-circle-outline"></ion-icon>
                 </button>
                 <div class="dots"></div>
-
               </div>
             </div>
           </div>
           <div class="popup popup--3 hidden" data-tab="3">
             <button class="btn btn--close-modal">&times;</button>
             <div class="popup__content">
-              <span class="p--title">Forkify</span><br>
+              <span class="p--title">Forkify</span><br />
               <span class="p--title-2">Project</span>
-              <p class="p--text">Built a web application that allows a user to search and display recips, add new recipes and store bookmarks. The application loads recipes from an API and stores bookmarks in local storage. </p>
+              <p class="p--text">
+                Built a web application that allows a user to search and display
+                recips, add new recipes and store bookmarks. The application
+                loads recipes from an API and stores bookmarks in local storage.
+              </p>
               <span class="p--title-2">Programming Languages + Tools</span>
               <ul class="p--list">
                 <li><span>JavaScript</span></li>
@@ -318,59 +364,66 @@
               <span class="p--title-2">Learning Points</span>
               <ul class="p--list">
                 <li><span>Loading recipes from an API</span></li>
-                <li><span>Rendering recipes, display bars, and bookmarks</span></li>
-                <li><span>Implementation of success and error messages</span></li>
+                <li>
+                  <span>Rendering recipes, display bars, and bookmarks</span>
+                </li>
+                <li>
+                  <span>Implementation of success and error messages</span>
+                </li>
                 <li><span>Storing recipe bookmarks with localStorage</span></li>
               </ul>
-                <a
-                  class="btn btn--source-1"
-                  href="https://github.com/jacintaph"
-                  target="_blank">
-                  source code
-                </a>
-                <a
-                  class="btn btn--source-2"
-                  href="https://forkify-jacinta.netlify.app/"
-                  target="_blank">
-                  Check out the app 🖥️
-                </a>
-            <!-- </div> -->
+              <a
+                class="btn btn--source-1"
+                href="https://github.com/jacintaph"
+                target="_blank"
+              >
+                source code
+              </a>
+              <a
+                class="btn btn--source-2"
+                href="https://forkify-jacinta.netlify.app/"
+                target="_blank"
+              >
+                Check out the app 🖥️
+              </a>
+              <!-- </div> -->
             </div>
           </div>
           <div class="popup popup--4 hidden" data-tab="4">
             <button class="btn btn--close-modal">&times;</button>
-            <div class="popup__content"> 
-              
-            </div>
-          </div> 
+            <div class="popup__content"></div>
+          </div>
         </div>
       </div>
     </section>
-
 
     <!----------------- FOOTER --------------->
     <footer class="footer" id="contact">
       <div class="footer__text_cont--left">
         <h2 class="footer__text footer__text--1">Let's chat!</h2>
-        <p class="footer__text footer__text--2">✉️  jacintaphillips14@gmail.com</p>
+        <p class="footer__text footer__text--2">
+          ✉️ jacintaphillips14@gmail.com
+        </p>
       </div>
       <div class="footer__text_cont--right">
-        <p class="footer__link"> 
+        <p class="footer__link">
           <a
             class="footer__link--icon"
-            href="https://linkedin.com/in/jacintaphillips" 
-            target="_blank">
+            href="https://linkedin.com/in/jacintaphillips"
+            target="_blank"
+          >
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
-          </p>
-          <p class="footer__link">
-            <a
+        </p>
+        <p class="footer__link">
+          <a
             class="footer__link--icon"
             href="https://github.com/jacintaph"
-            target="_blank">
+            target="_blank"
+          >
             <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </p>
+          </a>
+        </p>
       </div>
       <p class="footer__text footer__copyright">&copy; 2022 Jacinta Phillips</p>
     </footer>

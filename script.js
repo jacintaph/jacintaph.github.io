@@ -147,7 +147,6 @@ allSections.forEach(function (section) {
 const slider = function () {
   let curSlide = 0;
   const maxSlide = slides.length;
-  console.log(maxSlide);
 
   // Functions
   const createDots = function () {
