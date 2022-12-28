@@ -388,7 +388,7 @@ h4 {
   position: relative;
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 780px) {
   .section--1 {
     width: 100%;
     justify-content: center;
@@ -399,11 +399,20 @@ h4 {
     width: 65%;
   }
 }
+
 @media only screen and (max-width: 930px) {
   .section--1 {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-template-columns: 40% 60%;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 2fr));
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .about {
+    width: 65%;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .header__text {
     margin-bottom: 250px;
@@ -422,6 +431,17 @@ h4 {
   }
   .header {
     min-height: 400px;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .about__intro {
+    margin-right: 70px;
+  }
+}
+@media only screen and (min-width: 1365px) {
+  .about__intro {
+    margin-right: 200px;
   }
 }
 
