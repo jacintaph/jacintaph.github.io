@@ -76,6 +76,7 @@ p {
   justify-content: space-between;
   height: 5rem;
   width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav__logo {
@@ -86,13 +87,25 @@ p {
   padding-left: 5rem;
 }
 
-/* .nav__links {
+.nav__links {
   float: right;
-  display: block;
+  display: grid;
   list-style: none;
   padding-right: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.nav__links > a {
+  padding: 13px 15px 13px 15px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav__link:hover {
+  color: grey;
+}
+
+/*
 .nav__link {
   font-size: 18px;
   font-weight: 400;
@@ -102,7 +115,7 @@ p {
   transition: all 0.3s;
 } */
 
-.nav__bar > .nav__links {
+/* .nav__bar > .nav__links {
   display: inline;
   float: right;
   font-size: 18px;
@@ -122,9 +135,9 @@ p {
 
 .nav__bar > #nav-check {
   display: none;
-}
+} */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .nav__bar > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -174,10 +187,24 @@ p {
   .nav__logo {
     padding-left: 30px;
   }
+} */
+
+@media screen and (max-width: 650px) {
+  .nav__logo {
+    padding-left: 3px;
+  }
 }
 
-/* @media screen and (max-width: 600px) {
-  .nav__links.responsive {
+@media screen and (max-width: 600px) {
+  .nav__links {
+    grid-template-columns: 1fr 1fr;
+    font-size: smaller;
+  }
+  .nav__link {
+    padding: 5px;
+  }
+}
+/* .nav__links.responsive {
     position: relative;
   }
   .nav__links.responsive a.navicon {
@@ -189,23 +216,24 @@ p {
     float: none;
     display: block;
     text-align: left;
-  }
-} */
+  } */
 
 /* ------------- HEADER --------------- */
 
 .header {
-  height: 800px;
+  height: 100vh;
 }
 
 .header__container {
   /* flex: 1; */
   color: darkslategrey;
+  height: 100vh;
 }
 
 .header__text {
   display: block;
   margin: 200px;
+  margin-bottom: 300px;
   padding-bottom: 3rem;
 }
 
@@ -325,6 +353,7 @@ h4 {
   flex-wrap: wrap;
   border-top: 1px solid rgb(240, 237, 237);
   transition: transform 1s, opacity 1s;
+  height: 100vh;
 }
 
 .section--scroll {
@@ -523,8 +552,8 @@ h4 {
 
 .project__tile {
   background-color: rgb(231, 229, 229);
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 300px;
   text-align: center;
   display: flex;
   justify-content: center;
