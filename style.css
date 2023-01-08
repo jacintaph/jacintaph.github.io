@@ -221,13 +221,13 @@ p {
 /* ------------- HEADER --------------- */
 
 .header {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .header__container {
   /* flex: 1; */
   color: darkslategrey;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .header__text {
@@ -353,7 +353,7 @@ h4 {
   flex-wrap: wrap;
   border-top: 1px solid rgb(240, 237, 237);
   transition: transform 1s, opacity 1s;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .section--scroll {
