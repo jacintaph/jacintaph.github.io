@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="../img/logo3.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../controllers/burgerMenu.js"></script>
+    <script defer src="../controllers/skills.js"></script>
+    <script src="../footer.js"></script>
+    <title>jacinta phillips portfolio</title>
+  </head>
+  <body class="bodyContainer">
+    <!----------- HEADER ------------->
+    <!-- <section id="home"></section> -->
+    <header class="header" id="home">
+      <nav class="nav__bar">
+        <img
+          src="../img/logo4.png"
+          alt="portfolio logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jacinta Phillips"
+          data-version-number="3"
+        />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav__links">
+          <ul class="menu">
+            <li><a class="menuItem" href="../index.html">Home</a></li>
+            <li>
+              <a class="menuItem" href="experience.html">Industry Experience</a>
+            </li>
+            <li><a class="menuItem" href="skills.html">Skills</a></li>
+            <li><a class="menuItem" href="projects.html">Projects</a></li>
+            <li><a class="menuItem" href="extraCurricular.html">Extra-Curricular</a></li>
+            <li><a class="menuItem" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!----------- SIDE NAVS ------------->
+    <div class="sidenav">
+      <ul class="side__nav">
+        <li class="social__icons">
+          <a
+            class="icon icon-linkedin"
+            href="https://linkedin.com/in/jacintaphillips"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social__icons">
+          <a
+            class="icon icon-github"
+            href="https://github.com/jacintaph"
+            target="_blank"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li class="social__icons">
+          <a class="icon icon-contact" href="#contact">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="return__home">
+      <a class="up__arrow" target="_blank">
+        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+      </a>
+    </div>
+
+    <!----------- PROJECTS ------------->
+    <div class="skillsSection section" id="skills">
+      <h2 class="industryTitle">Industry Skills and Knowledge</h2>
+      <div class="skillsReflection skillsGrid" id="skillsReflection">
+        <h3>Identity and Access Management</h3>
+
+        <p class="skillsText skillsText-1">
+          Reflecting on my industry placement experience, I had the opportunity
+          to develop and apply several technical skills and knowledge areas that
+          contributed to my growth as a Software Engineer. These skills not only
+          enhanced my capability but also aligned with my chosen major and
+          career aspirations in the field of software development. These areas
+          include Identity and Access Management (IAM), software development,
+          and software testing.
+        </p>
+        <img class="jwtImg" src="../img/jwt.png" />
+        <div class="definitions">
+          <div class="about__tabs-container">
+            <div class="defineBtns">
+              <button
+                class="btn about__tab about__tab--1 about__tab--active"
+                data-tab="1"
+              >
+                ☁️ Azure Active Directory
+              </button>
+              <button class="btn about__tab about__tab--2" data-tab="2">
+                🔑 JSON Web Token (JWT)
+              </button>
+              <button class="btn about__tab about__tab--3" data-tab="3">
+                🔐 Role Based Access Control (RBAC)
+              </button>
+            </div>
+            <div class="definitionsText">
+              <p class="about__content about__content--1">
+                Cloud-based identity and access management service by Microsoft.
+                It's used to manage user identities, enforce security polices,
+                and simplify authentication and authorisation processes for
+                applications.
+              </p>
+              <p class="about__content about__content--2">
+                An open standard used to share security information between two
+                parties - a client and a server. Each JWT contains encoded JSON
+                objects.
+              </p>
+              <p class="about__content about__content--3">
+                An approach to restricting system access to authorised users,
+                and to implementing mandatory access control. Access is defined
+                around roles and privileges assinged to users.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="skillsText skillsText-2">
+          The main placement project involved developing an API secured with
+          Azure’s Active Directory (AD) for authentication. This task required
+          knowledge of the Azure platform and its authentication workflow that
+          uses client credential information and JSON Web Tokens (JWT) to grant
+          access to a Web API.
+        </p>
+        <p class="skillsText skillsText-3">
+          Implementing this layer of security was completely new to me, and thus
+          extensive research was required to understand the concept. Both
+          industry partner led tutorials and independent research was completed
+          to learn about sending and receiving client credentials, decoding
+          secure JWT’s to verify access, and applying this access to all API
+          endpoints. This included research on Role Based Access Control (RBAC),
+          where the API owner can assign “roles” to clients depending on their
+          level of access. This role is then used to verify the client identity
+          when accessing the API and allowing or disallowing certain
+          functionalities. I utilised Azure’s documentation websites for this
+          work, along with cross-platform documentation for JWT decoding.
+        </p>
+
+        <p class="skillsText skillsText-4">
+          Following this research, I successfully implemented a secure
+          authentication workflow for the project API. I was able to create a
+          client in Azure’s AD portal and assign/modify roles for API access.
+          The API successfully allowed and prohibited access when expected. I
+          now feel very confident to apply my knowledge of Identity and Access
+          Management practices, including JWT decoding, Azure AD authentication,
+          and RBAC implementation.
+        </p>
+        <p class="skillsText skillsText-5">
+          These skills and authentication knowledge are highly relevant to my
+          degree and software development major. Security is critical for public
+          applications, and confidence implementing a secure authentication
+          method can be applied to all future Azure applications I work on if
+          required. As a Full Stack developer, who may work on a variety of
+          different platforms, my new knowledge of RBAC and JWT decoding is also
+          easily transferrable, and I am confident now to modify implementation
+          for various platforms.
+        </p>
+        <br /><br />
+        <h3>Software Development and Quality Assurance</h3>
+        <p class="skillsText skillsText-6">
+          Creating the API deliverable involved a high amount of code
+          development and testing. Specifically, an individual endpoint was
+          coded to fulfil each unique functionality e.g., creating, updating,
+          and viewing a record. I created an automated unit test per endpoint to
+          confirm it achieved what was expected. These unit tests were coded
+          using the TestBox framework, which provides a clean syntax for
+          conveying what each endpoint should exactly do.
+        </p>
+
+        <p class="skillsText criticalText-7">
+          I had a beginner-intermediate level of prior knowledge and skill in
+          these areas, obtained through previous work experience as a Software
+          Engineer Intern, and via my software development major. Through my
+          major courses I had intermediate experience working with POSTMAN - an
+          API testing program, and had previously developed a small number of
+          API endpoints using the industry partner's preferred coding language.
+          Experience using POSTMAN was extremely helpful for testing endpoints
+          that required external data to be passed to the API. It helped me
+          confirm the correct formatting and naming conventions for data to send
+          to the API to create/update resources.
+        </p>
+        <img class="testImg" src="../img/postman.png" />
+        <p class="skillsText criticalText-8">
+          My previous knowledge helped initiate the project, however I found
+          that code review was necessary to fully understand the scope of the
+          API endpoints. Further API documentation research was also required to
+          ensure my work met the National API guidelines. This research was
+          concerned with ensuring the API was version controlled and used
+          appropriate requests (create/update/view).
+        </p>
+        <p class="skillsText criticalText-9">
+          Following my research and development I successfully implemented all
+          required API endpoints with a 100% testing pass rate. This meant that
+          each endpoint achieved its expected results. The API endpoints
+          effectively retrieved, stored, and updated information in the database
+          for further use.
+        </p>
+        <img class="testImg" src="../img/testbox.png" />
+        <p class="skillsText criticalText-10">
+          The extended skills and knowledge I gained working on my industry
+          partner's code base to develop the API was a fantastic way to work
+          towards my career aspirations. It helped me appreciate a more
+          commercial side of software development, and the requirements for
+          meeting National Guidelines for software. These are key skills of
+          back-end development and a crucial aspect of Full Stack work. I now
+          have a greater understanding of the inner methods and protocols of
+          another software application, which I can successfully apply to future
+          projects.
+        </p>
+      </div>
+    </div>
+
+    <!------------ FOOTER --------------->
+    <section id="footer"></section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

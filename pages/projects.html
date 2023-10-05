@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="../img/logo3.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../controllers/burgerMenu.js"></script>
+    <script defer src="../controllers/project.js"></script>
+    <script src="../footer.js"></script>
+
+    <title>jacinta phillips portfolio</title>
+  </head>
+  <body class="bodyContainer">
+    <!----------- HEADER ------------->
+    <header class="header" id="home">
+      <nav class="nav__bar">
+        <img
+          src="../img/logo4.png"
+          alt="portfolio logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jacinta Phillips"
+          data-version-number="3"
+        />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav__links">
+          <ul class="menu">
+            <li><a class="menuItem" href="../index.html">Home</a></li>
+            <li>
+              <a class="menuItem" href="experience.html">Industry Experience</a>
+            </li>
+            <li><a class="menuItem" href="skills.html">Skills</a></li>
+            <li><a class="menuItem" href="projects.html">Projects</a></li>
+            <li><a class="menuItem" href="extraCurricular.html">Extra-Curricular</a></li>
+            <li><a class="menuItem" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!----------- SIDE NAVS ------------->
+    <div class="sidenav">
+      <ul class="side__nav">
+        <li class="social__icons">
+          <a
+            class="icon icon-linkedin"
+            href="https://linkedin.com/in/jacintaphillips"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social__icons">
+          <a
+            class="icon icon-github"
+            href="https://github.com/jacintaph"
+            target="_blank"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li class="social__icons">
+          <a class="icon icon-contact" href="#contact">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="return__home">
+      <a class="up__arrow" target="_blank">
+        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+      </a>
+    </div>
+
+    <!----------- PROJECTS ------------->
+    <div class="section" id="projects">
+      <div class="section--2">
+        <div class="project__grid">
+          <div class="project section__title">
+            <h2 class="section__title--2">Projects</h2>
+            <ion-icon class="code" name="code-slash-outline"></ion-icon>
+          </div>
+          <div class="project project__tile project--1" data-tab="1">
+            <img src="../img/logo-2.png" class="img img--1" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="1">Maptiv</p>
+              <p class="text__content">Web Application</p>
+            </div>
+          </div>
+
+          <div class="project project__tile project--2" data-tab="2">
+            <img src="../img/shellTitle.png" class="img img--2" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="2">Command Shell</p>
+              <p class="text__content">
+                Command line interface application using C
+              </p>
+            </div>
+          </div>
+
+          <div class="project project__tile project--3" data-tab="3">
+            <img src="../img/forkify.png" class="img img--3" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="3">TEXT -- 1</p>
+              <p class="text__content">Web Application</p>
+            </div>
+          </div>
+
+          <div class="project project__tile project--4" data-tab="4">
+            <img src="../img/tetris.png" class="img img--4" />
+            <div class="text hidden">
+              <p class="text__title" data-tab="4"></p>
+              <p class="text__content"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay hidden"></div>
+        <div class="wrapper">
+          <div class="popup popup--1 hidden" data-tab="1">
+            <button class="btn btn--close-modal">&times;</button>
+            <div class="popup__content">
+              <span class="p--title">Maptiv</span><br />
+              <span class="p--title-2">Project</span>
+              <p class="p--text">
+                A fitness themed web application that allows users to map and
+                upload various fitness activities to their browser. Each
+                activity is uniquely stored and displayed on a map using a
+                geolocation API.
+              </p>
+              <span class="p--title-2">Programming Languages + Tools</span>
+              <ul class="p--list">
+                <li><span>JavaScript</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+              </ul>
+              <span class="p--title-2">Learning Points</span>
+              <ul class="p--list">
+                <li>
+                  <span
+                    >Accessing and understanding open-source Geolocation API
+                    docs</span
+                  >
+                </li>
+                <li><span>Displaying map markers</span></li>
+                <li><span>Manipulating data structures</span></li>
+                <li><span>Rendering activity information for users</span></li>
+                <li></li>
+              </ul>
+
+              <a
+                class="btn btn--source-1"
+                href="https://github.com/jacintaph/Maptiv"
+                target="_blank"
+              >
+                source code
+              </a>
+              <a
+                class="btn btn--source-2"
+                href="https://maptiv.netlify.app/"
+                target="_blank"
+              >
+                Check out the app 🖥️
+              </a>
+            </div>
+          </div>
+          <div class="popup popup--2 hidden" data-tab="2">
+            <button class="btn btn--close-modal">&times;</button>
+            <div class="popup__content">
+              <span class="p--title">Command Shell</span><br />
+              <span class="p--title-2">Project</span>
+              <p class="p--text">
+                A linux command shell that operates using Cygwin. The shell
+                accepts a total of 7 commands, and executes in an endless loop
+                until the user enters a 'quit' command.
+              </p>
+              <span class="p--title-2">Programming Languages + Tools</span>
+              <ul class="p--list">
+                <li><span>C</span></li>
+                <li><span>Cygwin</span></li>
+              </ul>
+              <span class="p--title-2">Learning Points</span>
+              <ul class="p--list">
+                <li>
+                  <span
+                    >Using Cygwin and Linux commands to display operating system
+                    information</span
+                  >
+                </li>
+                <li><span>Creating prefix calculation algorithms </span></li>
+                <li><span>File and folder handling</span></li>
+              </ul>
+              <a
+                class="btn btn--source-1"
+                href="https://github.com/jacintaph/shell"
+                target="_blank"
+              >
+                source code
+              </a>
+
+              <div class="img__slider">
+                <div class="slide fade">
+                  <img src="../img/shell-1.png" class="imgs slide--1" />
+                </div>
+                <div class="slide">
+                  <img src="../img/shell2.png" class="imgs slide--2" />
+                </div>
+                <div class="slide">
+                  <img src="../img/shell3.png" class="imgs slide--3" />
+                </div>
+                <div class="slide">
+                  <img src="../img/shell4.png" class="imgs slide--4" />
+                </div>
+                <div class="slide">
+                  <img src="../img/shell5.png" class="imgs slide--5" />
+                </div>
+
+                <button class="slider__btn slider__btn--left">
+                  <ion-icon name="chevron-back-circle-outline"></ion-icon>
+                </button>
+                <button class="slider__btn slider__btn--right">
+                  <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                </button>
+                <div class="dots"></div>
+              </div>
+            </div>
+          </div>
+          <div class="popup popup--3 hidden" data-tab="3">
+            <button class="btn btn--close-modal">&times;</button>
+            <div class="popup__content">
+              <span class="p--title">Forkify</span><br />
+              <span class="p--title-2">Project</span>
+              <p class="p--text">
+                A web application that allows a user to search and display
+                recips, add new recipes and store bookmarks. The application
+                loads recipes from an API and stores bookmarks in local storage.
+              </p>
+              <span class="p--title-2">Programming Languages + Tools</span>
+              <ul class="p--list">
+                <li><span>JavaScript</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+              </ul>
+              <span class="p--title-2">Learning Points</span>
+              <ul class="p--list">
+                <li><span>Loading recipes from an API</span></li>
+                <li>
+                  <span>Rendering recipes, display bars, and bookmarks</span>
+                </li>
+                <li>
+                  <span>Implementation of success and error messages</span>
+                </li>
+                <li><span>Storing recipe bookmarks with localStorage</span></li>
+              </ul>
+              <a
+                class="btn btn--source-1"
+                href="https://github.com/jacintaph/forkify-course"
+                target="_blank"
+              >
+                source code
+              </a>
+              <a
+                class="btn btn--source-2"
+                href="https://forkify-jacinta.netlify.app/"
+                target="_blank"
+              >
+                Check out the app 🖥️
+              </a>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="popup popup--4 hidden" data-tab="4">
+            <button class="btn btn--close-modal">&times;</button>
+            <div class="popup__content">
+              <span class="p--title">Tetris</span><br />
+              <span class="p--title-2">Project</span>
+              <p class="p--text">
+                A Tetris web application. Tetris is a problem solving video game
+                where players manipulate falling pieces (Tetrominoes made out of
+                blocks) to create complete rows. The objective is to clear as
+                many rows as possible and achieve the highest score.
+              </p>
+              <span class="p--title-2">Programming Languages + Tools</span>
+              <ul class="p--list">
+                <li><span>JavaScript</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+              </ul>
+              <span class="p--title-2">Learning Points</span>
+              <ul class="p--list">
+                <li>
+                  <span>Rendering and manipulating HTML Canvas elements</span>
+                </li>
+                <li>
+                  <span>Applying a MVC architecture design pattern</span>
+                </li>
+                <li>
+                  <span>Implementation of the Observer design pattern</span>
+                </li>
+                <li><span>Storing game scores with localStorage</span></li>
+              </ul>
+              <a
+                class="btn btn--source-1"
+                href="https://github.com/jacintaph/tetris"
+                target="_blank"
+              >
+                source code
+              </a>
+              <a
+                class="btn btn--source-2"
+                href="https://tetriswebgame.netlify.app/"
+                target="_blank"
+              >
+                Check out the app 🖥️
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ FOOTER --------------->
+    <section id="footer"></section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="../img/logo3.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ionicons@5.6.3/dist/css/ionicons.min.css"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../controllers/burgerMenu.js"></script>
+    <script defer src="../controllers/contact.js"></script>
+    <script src="../footer.js"></script>
+
+    <title>jacinta phillips portfolio</title>
+  </head>
+  <body class="contactBody">
+    <header class="header" id="home">
+      <nav class="nav__bar">
+        <img
+          src="../img/logo4.png"
+          alt="portfolio logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jacinta Phillips"
+          data-version-number="3"
+        />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav__links">
+          <ul class="menu">
+            <li><a class="menuItem" href="../index.html">Home</a></li>
+            <li>
+              <a class="menuItem" href="experience.html">Industry Experience</a>
+            </li>
+            <li><a class="menuItem" href="skills.html">Skills</a></li>
+            <li><a class="menuItem" href="projects.html">Projects</a></li>
+            <li><a class="menuItem" href="extraCurricular.html">Extra-Curricular</a></li>
+            <li><a class="menuItem" href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
+          <!-- <ion-icon name="link-outline"></ion-icon> -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="contents">
+      <div class="loader hidden" id="loader"></div>
+      <div class="successMessage hidden" id="successMessage">
+        Success! Message sent.
+      </div>
+      <div class="errorMessage hidden" id="errorMessage">
+        Error Sending Message!
+      </div>
+      <form
+        class="contactForm"
+        id="contactForm"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzrfMHhMVCbCrbOUGBzBzyPgLwex5OOA8qFVTjkFr8Alsj9n3K-bcvlsofwKlAk0-LW6A/exec"
+      >
+        <h2 class="contactMe">Contact Me</h2>
+        <input name="Email" type="email" placeholder="Email" required />
+        <input name="Name" type="text" placeholder="Name" required />
+        <textarea
+          class="message"
+          name="Message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button class="submitMessage btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- <section id="footer"></section> -->
+  </body>
+</html>
+
+<script>
+  window.addEventListener("load", function () {
+    const form = document.getElementById("contactForm");
+    const message = document.getElementById("successMessage");
+    const loader = document.getElementById("loader");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+
+      loader.classList.remove("hidden");
+      fetch(action, {
+        method: "POST",
+        body: data,
+      })
+        .then(() => {
+          loader.classList.add("hidden");
+          message.classList.remove("hidden");
+          clearInputFields(form);
+          setTimeout(() => {
+            message.classList.add("hidden");
+          }, 4000); // Hide the message after 5 seconds
+        })
+        .catch((error) => {
+          loader.classList.add("hidden");
+          message.textContent = "Error sending the message.";
+          message.classList.remove("hidden");
+          setTimeout(() => {
+            message.classList.add("hidden");
+          }, 4000);
+          console.error("Error:", error);
+        });
+    });
+
+    // Function to clear input fields
+    function clearInputFields(form) {
+      const inputs = form.querySelectorAll("input, textarea");
+      inputs.forEach((input) => {
+        input.value = "";
+      });
+    }
+  });
+</script>
