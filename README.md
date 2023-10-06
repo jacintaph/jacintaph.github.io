@@ -17,3 +17,14 @@ Site is live at: https://jacintaph.github.io/
 - HTML
 - CSS
 - Vanilla JavaScript
+
+## Credits
+- https://www.pexels.com/photo/physiotherapist-holding-patients-leg-5794025/
+- https://unsplash.com/@campaign_creators?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+- https://unsplash.com/photos/qCi_MzVODoU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+- https://unsplash.com/@impelling?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+- https://unsplash.com/photos/RMIsZlv8qv4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+- https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+- https://unsplash.com/photos/ZDwh_sxsX2g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+- https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js
+- https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js
