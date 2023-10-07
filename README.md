@@ -19,7 +19,6 @@ Site is live at: https://jacintaph.github.io/
 - Vanilla JavaScript
 
 ## Credits
-- https://www.pexels.com/photo/physiotherapist-holding-patients-leg-5794025/
 - https://unsplash.com/@campaign_creators?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 - https://unsplash.com/photos/qCi_MzVODoU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 - https://unsplash.com/@impelling?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
