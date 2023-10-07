@@ -45,23 +45,6 @@ btnScrollUp.addEventListener("click", function () {
   home.scrollIntoView({ behavior: "smooth" });
 });
 
-// /* ------------- ABOUT TABS --------------------*/
-// tabsContainer.addEventListener("click", function (e) {
-//   const clicked = e.target.closest(".about__tab");
-//   if (!clicked) return; // guard clause
-//   // Reset tab active tag
-//   tabs.forEach((tab) => tab.classList.remove("about__tab--active"));
-//   // Reset content active tag
-//   tabContent.forEach((content) =>
-//     content.classList.remove("about__content--active")
-//   );
-//   //Add active tag to clicked tab
-//   clicked.classList.add("about__tab--active");
-//   document
-//     .querySelector(`.about__content--${clicked.dataset.tab}`)
-//     .classList.add("about__content--active");
-// });
-
 /* ------------- REVEAL SECTIONS ON SCROLL ------------ */
 const revealSection = function (entries, observer) {
   const [entry] = entries;
@@ -105,4 +88,25 @@ hamburger.addEventListener("click", toggleMenu);
 
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
+});
+
+const credits = document.querySelector(".credits__link");
+const creditPopup = document.querySelector(".credits__popup");
+const btnCloseModal = document.querySelector(".btn--close-modal");
+
+credits.addEventListener("click", function (e) {
+  e.preventDefault();
+  creditPopup.classList.remove("hidden");
+});
+
+btnCloseModal.addEventListener("click", function (e) {
+  e.preventDefault();
+  creditPopup.classList.add("hidden");
+});
+
+section.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (!creditPopup.classList.contains("hidden")) {
+    creditPopup.classList.add("hidden");
+  }
 });

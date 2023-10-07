@@ -227,6 +227,7 @@ h4 {
 
 .sdlc {
   height: 50%;
+  border-radius: 40%;
 }
 
 .down__arrow {
@@ -665,7 +666,7 @@ h4 {
   color: #fff;
   align-items: center;
   text-align: left !important;
-  height: 260px;
+  height: 290px;
   background-color: #2f4f4f;
   position: relative;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
@@ -673,7 +674,7 @@ h4 {
 
 .footer__text_cont--left {
   padding-top: 50px;
-  padding-left: 300px;
+  padding-left: 400px;
   float: left;
   position: relative;
 }
@@ -1190,7 +1191,7 @@ p:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .skillsText {
@@ -1245,7 +1246,8 @@ p:before {
 }
 
 .jwtImg {
-  width: 40%;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .testImg {
@@ -1287,4 +1289,49 @@ p:before {
 
 .definitionsText p {
   padding-bottom: 20px;
+}
+
+.credits__link {
+  color: rgb(214, 222, 224);
+  font-size: 12px;
+}
+
+.credits__link:hover {
+  cursor: pointer;
+}
+
+.credits__popup {
+  list-style-type: none;
+  display: block;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  border-radius: 9px;
+  background-color: #596064;
+  padding: 10px;
+  z-index: 1000;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+}
+
+.credits__popup a {
+  color: var(--color-light--2);
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.credits__popup h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn--close-modal {
+  color: white;
 }
