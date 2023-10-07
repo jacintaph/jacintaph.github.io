@@ -10,6 +10,7 @@ body {
   width: 100%;
   margin: 0px;
   scroll-behavior: smooth;
+  text-align: center;
 }
 
 body {
@@ -35,6 +36,7 @@ p {
   font-size: 1rem;
   margin: 0px;
   padding: 0px;
+  max-width: 800px;
 }
 
 @media (max-width: 768px) {
@@ -208,6 +210,7 @@ p {
   margin-bottom: 300px;
   padding-bottom: 3rem;
   gap: 20px;
+  text-align: left !important;
 }
 
 h1 {
@@ -220,6 +223,10 @@ h4 {
   font-weight: normal;
   color: black;
   margin-bottom: 30px;
+}
+
+.sdlc {
+  height: 50%;
 }
 
 .down__arrow {
@@ -322,9 +329,8 @@ h4 {
 .section {
   margin: 0px 0px 100px 0px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  border-top: 1px solid rgb(240, 237, 237);
   transition: transform 1s, opacity 1s;
 }
 
@@ -658,6 +664,7 @@ h4 {
 .footer {
   color: #fff;
   align-items: center;
+  text-align: left !important;
   height: 260px;
   background-color: #2f4f4f;
   position: relative;
@@ -715,10 +722,6 @@ h4 {
 
 .footer__copyright {
   font-size: 0.75rem;
-  text-align: center;
-  vertical-align: bottom;
-  bottom: 0;
-  clear: both;
 }
 
 @media only screen and (max-width: 550px) {
@@ -767,7 +770,7 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: auto;
   height: 80%;
   border-radius: 9px;
   background-color: #fff;
@@ -778,9 +781,10 @@ h4 {
 }
 
 .popup__content {
+  text-align: left;
   padding: 40px;
   height: 95%;
-  width: 100%;
+  width: auto;
   overflow: auto;
   margin: 0;
 }
@@ -1127,23 +1131,30 @@ p:before {
 }
 
 .expSection {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .skillsSection {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .industryTitle {
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 780px) {
   .industryTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .ethicsTitle {
@@ -1158,14 +1169,9 @@ p:before {
     grid-template-columns: 1fr !important;
     padding: 20px;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
-  /* .ethicsGrid {
-    background-color: #f0eeed;
-    border-radius: 10px;
-    padding: 10px;
-  } */
   .expImg {
     width: 100%;
   }
@@ -1184,6 +1190,7 @@ p:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:40px;
 }
 
 .skillsText {
@@ -1195,19 +1202,17 @@ p:before {
 .criticalGrid {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .criticalText {
   padding: 10px;
   margin-bottom: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 781px) {
-  .criticalGrid {
-  }
   .ethicsGrid {
     display: grid;
     grid-template-columns: auto auto;
@@ -1215,13 +1220,14 @@ p:before {
     padding-left: 145px;
     padding-right: 145px;
     padding-bottom: 80px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
   .ethicsTitle {
     margin-top: 30px;
-    margin-left: 145px;
+    margin-bottom: 30px;
+    font-size: 2.7rem;
   }
 }
 
@@ -1241,6 +1247,7 @@ p:before {
 .jwtImg {
   width: 40%;
 }
+
 .testImg {
   width: 50%;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
@@ -1252,7 +1259,7 @@ p:before {
   justify-content: center;
   align-items: center;
   width: auto;
-  max-width: 70%;
+  max-width: 80%;
   background-color: #d9dcdf;
   border-radius: 10px;
   padding-left: 10px;
